@@ -1,0 +1,172 @@
+﻿# Hexo Fluid theme override configuration.
+#
+# This file controls the visual layer: navigation, banners, article metadata, search, footer, and comments.
+# Keep scientific content in Markdown posts under `source/_posts/`; keep visual preferences here.
+
+# Browser icons. Put these files under `source/img/` in the source branch.
+favicon: /img/favicon.ico
+apple_touch_icon: /img/fluid.png
+
+# Top navigation. These entries should match pages generated under `source/`.
+navbar:
+  blog_title: 秋水仙素
+  ground_glass:
+    enable: true
+    px: 3
+    alpha: 0.65
+  menu:
+    - { key: home, link: /, icon: iconfont icon-home-fill }
+    - { key: archive, link: /archives/, icon: iconfont icon-archive-fill }
+    - { key: category, link: /categories/, icon: iconfont icon-category-fill }
+    - { key: tag, link: /tags/, icon: iconfont icon-tags-fill }
+    - { key: about, link: /about/, icon: iconfont icon-user-fill }
+
+# Homepage: use one strong image and one concise slogan, like the graphical abstract of the whole site.
+index:
+  slogan:
+    enable: true
+    text: "Materials, Terra, and the little things between."
+  banner_img: /img/lappland.png
+  banner_img_height: 100
+  banner_mask_alpha: 0.45
+  auto_excerpt:
+    enable: true
+    length: 180
+  post_meta:
+    date: true
+    category: true
+    tag: true
+
+# Article pages: optimized for reading research notes, experiment summaries, and code snippets.
+post:
+  banner_img: /img/default.png
+  banner_img_height: 70
+  banner_mask_alpha: 0.35
+  meta:
+    author:
+      enable: true
+    date:
+      enable: true
+      format: YYYY-MM-DD
+    wordcount:
+      enable: true
+    min2read:
+      enable: true
+    views:
+      enable: false
+  copyright:
+    enable: true
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Index pages for browsing old notes by time, category, or tag.
+archive:
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.4
+
+category:
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.4
+
+tag:
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.4
+
+# About page. Create `source/about/index.md` so the navbar link does not point to a missing page.
+about:
+  banner_img: /img/wild.jpg
+  banner_img_height: 70
+  banner_mask_alpha: 0.45
+  avatar: /img/avatar.png
+  name: ntcmars
+  intro: 材料科学与工程研究生 / Doctor of Rhodes Island
+  icons:
+    - { class: iconfont icon-github-fill, link: "https://github.com/ntczyz", tip: GitHub }
+  text: |
+    你好，我是 ntcmars，一名材料科学与工程方向的研究生。
+
+    这里会记录科研训练、材料表征与计算学习中的笔记，也会放一些读书、游戏和生活碎片。
+    如果你也关心材料、微观结构、相变，或者只是路过罗德岛，欢迎慢慢看。
+
+page:
+  banner_img: /img/default.png
+  banner_img_height: 70
+  banner_mask_alpha: 0.35
+
+links:
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.4
+  items: []
+
+# Small interactive features. These are decorative, so keep them lightweight.
+fun_features:
+  typing:
+    enable: true
+    typeSpeed: 70
+    cursorChar: _
+    loop: false
+  anchorjs:
+    enable: true
+    element: h1,h2,h3,h4,h5,h6
+    placement: left
+    visible: hover
+    icon: ''
+  progressbar:
+    enable: true
+    height_px: 3
+    color: "#29d"
+
+# Search, image loading, dark mode, and article structure.
+search:
+  enable: true
+  path: /local-search.xml
+  include_content: true
+
+lazyload:
+  enable: true
+  loading_img: /img/loading.gif
+  onlypost: false
+  offset_factor: 2
+
+dark_mode:
+  enable: true
+  default: auto
+
+code:
+  copy_btn: true
+  language:
+    enable: true
+    default: TEXT
+
+toc:
+  enable: true
+  headingSelector: h1,h2,h3,h4,h5,h6
+  collapseDepth: 0
+
+footer:
+  content: >
+    <span>材料科学与罗德岛日常记录</span>
+  statistics:
+    enable: true
+  beian:
+    enable: false
+  license:
+    enable: true
+    text: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Analytics and comments are disabled by default to avoid adding third-party trackers before you need them.
+web_analytics:
+  enable: false
+  follow_dnt: true
+
+comment:
+  enable: false
+
+custom_js: []
+custom_css:
+  - /css/var.css

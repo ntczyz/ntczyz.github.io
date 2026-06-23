@@ -1,0 +1,119 @@
+﻿# Hexo site configuration for https://ntczyz.github.io/
+#
+# Branch strategy:
+# - Keep this Hexo source project on a branch named `source`.
+# - Deploy generated static files to `master`, because GitHub Pages is serving that branch now.
+# - Think of `source` as your lab notebook and raw data, and `master` as the polished figure exported for publication.
+
+# Basic identity shown in browser titles, search results, and social previews.
+title: 秋水仙素的小站
+subtitle: 材料、相图、罗德岛与生活记录
+description: 材料科学与工程研究生的个人博客，记录科研学习、材料计算、实验随笔与明日方舟相关兴趣。
+keywords:
+  - 材料科学与工程
+  - 材料学
+  - 研究生
+  - 科研笔记
+  - Hexo
+  - 明日方舟
+  - Arknights
+author: ntcmars
+language: zh-CN
+timezone: Asia/Hong_Kong
+
+# Public URL settings. These must match the GitHub Pages address exactly.
+url: https://ntczyz.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults: {}
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory layout for the source branch.
+# `source/` contains Markdown pages and posts; `public/` is generated output and should not be committed to `source`.
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - README.md
+
+# Writing behavior. `future: false` prevents unfinished future-dated drafts from being published accidentally.
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude:
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: false
+
+# Code highlighting for notes, scripts, and data-processing snippets.
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Homepage pagination, similar to deciding how many records to show per lab notebook page.
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Default taxonomy for posts that do not explicitly set categories or tags.
+default_category: 材料随笔
+category_map: {}
+tag_map: {}
+
+# Time display.
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+
+per_page: 10
+pagination_dir: page
+
+# Theme selection. Fluid settings are placed in `_config.fluid.yml` to keep this file focused on site-level behavior.
+theme: fluid
+
+# RSS/Atom feed. Requires `hexo-generator-feed` in package.json.
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: /img/favicon.ico
+
+# Local search index. Requires `hexo-generator-search` in package.json.
+search:
+  path: local-search.xml
+  field: all
+  content: true
+  format: html
+
+# Deployment target.
+# Run this only from the `source` branch. Hexo will generate `public/` and push that static output to `master`.
+deploy:
+  type: git
+  repo: https://github.com/ntczyz/ntczyz.github.io.git
+  branch: master
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
