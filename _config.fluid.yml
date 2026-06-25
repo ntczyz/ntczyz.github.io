@@ -5,7 +5,7 @@
 
 # Browser icons. Put these files under `source/img/` in the source branch.
 favicon: /img/favicon.ico
-apple_touch_icon: /img/fluid.png
+apple_touch_icon: /img/fluid.jpg
 
 # Top navigation. These entries should match pages generated under `source/`.
 navbar:
@@ -26,7 +26,7 @@ index:
   slogan:
     enable: true
     text: "Materials, Terra, and the little things between."
-  banner_img: /img/lappland.png
+  banner_img: /img/flowerfield.jpg
   banner_img_height: 100
   banner_mask_alpha: 0.45
   auto_excerpt:
@@ -39,7 +39,7 @@ index:
 
 # Article pages: optimized for reading research notes, experiment summaries, and code snippets.
 post:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.35
   meta:
@@ -61,17 +61,17 @@ post:
 
 # Index pages for browsing old notes by time, category, or tag.
 archive:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.4
 
 category:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.4
 
 tag:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.4
 
@@ -92,15 +92,20 @@ about:
     如果你也关心材料、微观结构、相变，或者只是路过罗德岛，欢迎慢慢看。
 
 page:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.35
 
 links:
-  banner_img: /img/default.png
+  banner_img: /img/default.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.4
   items: []
+
+page404:
+  banner_img: /img/default.jpg
+  banner_img_height: 85
+  banner_mask_alpha: 0.4
 
 # Small interactive features. These are decorative, so keep them lightweight.
 fun_features:

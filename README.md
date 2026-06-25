@@ -12,7 +12,7 @@
 
 - 身份：材料科学与工程研究生
 - 主题：科研笔记、材料学习、实验与计算记录、明日方舟兴趣内容
-- 风格：清爽、克制，保留 Fluid 的阅读体验，用 `/img/lappland.png` 作为首页视觉锚点
+- 风格：清爽、克制，保留 Fluid 的阅读体验，用 `/img/flowerfield.jpg` 作为首页视觉锚点
 
 ## 内容地图
 
@@ -52,10 +52,10 @@ scaffolds/      # 新文章模板
 当前配置依赖这些文件，已经放在 `source/img/`：
 
 - `favicon.ico`：浏览器图标
-- `fluid.png`：移动端图标和备用 logo
+- `fluid.jpg`：移动端图标和备用 logo
 - `avatar.png`：个人头像
-- `lappland.png`：首页视觉图
-- `default.png`：文章、分类、标签默认背景图
+- `flowerfield.jpg`：首页视觉图
+- `default.jpg`：文章、分类、标签默认背景图
 - `wild.jpg`：关于页背景图
 - `loading.gif`：图片懒加载占位图
 
