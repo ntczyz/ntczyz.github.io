@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>秋水仙素的小站</title>
+  <icon>https://ntczyz.github.io/img/favicon.ico</icon>
+  <subtitle>材料、相图、罗德岛与生活记录</subtitle>
+  <link href="https://ntczyz.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://ntczyz.github.io/"/>
+  <updated>2026-06-25T13:34:49.722Z</updated>
+  <id>https://ntczyz.github.io/</id>
+  
+  <author>
+    <name>ntcmars</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面对天灾，我们并非无计可施</title>
+    <link href="https://ntczyz.github.io/2026/06/23/hello-my-site/"/>
+    <id>https://ntczyz.github.io/2026/06/23/hello-my-site/</id>
+    <published>2026-06-22T16:00:00.000Z</published>
+    <updated>2026-06-25T13:34:49.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;欢迎来到秋水仙素的小站。&lt;/p&gt;
+&lt;p&gt;我是</summary>
+        
+      
+    
+    
+    
+    <category term="生活记录" scheme="https://ntczyz.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="材料科学" scheme="https://ntczyz.github.io/tags/%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="明日方舟" scheme="https://ntczyz.github.io/tags/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/"/>
+    
+    <category term="博客" scheme="https://ntczyz.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>

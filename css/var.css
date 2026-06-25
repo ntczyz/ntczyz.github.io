@@ -1,0 +1,174 @@
+/*
+ * Personal visual layer for 秋水仙素的小站.
+ *
+ * Design idea:
+ * - Use calm blue-gray tones for research notes and long reading.
+ * - Use a restrained red accent as a small Arknights/Rhodes-Island echo.
+ * - Keep contrast high enough for papers, formulas, code, and lab records.
+ */
+
+:root {
+  --mse-bg: #f7f9fb;
+  --mse-surface: #ffffff;
+  --mse-text: #1f2933;
+  --mse-muted: #6b7785;
+  --mse-border: #d8e0e8;
+  --mse-accent: #ba2d3a;
+  --mse-accent-soft: rgba(186, 45, 58, 0.12);
+  --mse-lab-blue: #315f72;
+  --mse-lab-blue-soft: rgba(49, 95, 114, 0.12);
+  --mse-code-bg: #101820;
+  --mse-shadow: 0 14px 34px rgba(31, 41, 51, 0.12);
+}
+
+html[data-user-color-scheme='dark'],
+html[data-default-color-scheme='dark'] {
+  --mse-bg: #111820;
+  --mse-surface: #17212b;
+  --mse-text: #edf2f7;
+  --mse-muted: #aeb9c5;
+  --mse-border: #2a3745;
+  --mse-accent: #ff6b7a;
+  --mse-accent-soft: rgba(255, 107, 122, 0.16);
+  --mse-lab-blue: #8ecae6;
+  --mse-lab-blue-soft: rgba(142, 202, 230, 0.14);
+  --mse-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  color: var(--mse-text);
+  background: var(--mse-bg);
+  letter-spacing: 0;
+}
+
+/* Keep the first viewport readable when the banner image is visually rich. */
+.index-header .slogan,
+.banner-text .h1,
+.banner-text .h2,
+.banner-text h1,
+.banner-text h2 {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+}
+
+.navbar .navbar-brand strong {
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.markdown-body {
+  color: var(--mse-text);
+}
+
+.markdown-body a {
+  color: var(--mse-lab-blue);
+  text-underline-offset: 0.18em;
+}
+
+.markdown-body a:hover {
+  color: var(--mse-accent);
+}
+
+.markdown-body h2 {
+  border-bottom-color: var(--mse-border);
+}
+
+.markdown-body blockquote {
+  color: var(--mse-muted);
+  border-left-color: var(--mse-lab-blue);
+  background: var(--mse-lab-blue-soft);
+}
+
+/* Article cards should feel like clean research-note entries, not heavy panels. */
+.index-card,
+.post-card,
+#board {
+  border-radius: 8px;
+  box-shadow: var(--mse-shadow);
+}
+
+.index-card .index-header,
+.index-card .index-excerpt,
+.index-card .index-btm {
+  color: var(--mse-text);
+}
+
+.index-card .index-excerpt {
+  line-height: 1.78;
+}
+
+/* Tags and categories behave like compact metadata labels for papers and experiments. */
+.tagcloud a,
+.category-list a,
+.post-meta a {
+  color: var(--mse-lab-blue);
+}
+
+.tagcloud a:hover,
+.category-list a:hover,
+.post-meta a:hover {
+  color: var(--mse-accent);
+}
+
+.post-meta i,
+.index-btm i {
+  color: var(--mse-muted);
+}
+
+/* Code blocks need stronger contrast because this blog will likely contain scripts and data-processing notes. */
+.markdown-body pre,
+.highlight {
+  border-radius: 8px;
+  background: var(--mse-code-bg) !important;
+}
+
+.markdown-body code:not(pre code) {
+  color: var(--mse-accent);
+  background: var(--mse-accent-soft);
+  border-radius: 4px;
+  padding: 0.12em 0.34em;
+}
+
+/* Tables are common in materials notes, so give them quiet but clear grid lines. */
+.markdown-body table tr {
+  background-color: var(--mse-surface);
+  border-top-color: var(--mse-border);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--mse-lab-blue-soft);
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border-color: var(--mse-border);
+}
+
+/* Footer should stay secondary; the writing is the primary material. */
+footer,
+.footer-inner {
+  color: var(--mse-muted);
+}
+
+@media (max-width: 768px) {
+  .index-card,
+  #board {
+    border-radius: 6px;
+  }
+
+  .markdown-body {
+    font-size: 15.5px;
+    line-height: 1.82;
+  }
+
+  .markdown-body h1 {
+    font-size: 1.75rem;
+  }
+
+  .markdown-body h2 {
+    font-size: 1.42rem;
+  }
+}
